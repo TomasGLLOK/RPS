@@ -11,34 +11,34 @@ function getComputerChoice () {
 }
 
 function playRound(pChoice, cChoice) {
-    if (pChoice == cChoice) {
+    if (pChoice === cChoice) {
         console.log("Is a tie!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
-    else if (pChoice=="Rock" && cChoice=="Paper") {
+    else if (pChoice==="Rock" && cChoice==="Paper") {
         console.log("You loose!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
-   else if (pChoice=="Rock" && cChoice=="Scissors") {
+   else if (pChoice==="Rock" && cChoice==="Scissors") {
         console.log("You win!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
-    else if (pChoice=="Paper" && cChoice=="Scissors") {
+    else if (pChoice==="Paper" && cChoice==="Scissors") {
         console.log("You loose!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
-   else if (pChoice=="Paper" && cChoice=="Rock") {
+   else if (pChoice==="Paper" && cChoice==="Rock") {
         console.log("You win!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
-    else if (pChoice=="Scissors" && cChoice=="Rock") {
+    else if (pChoice==="Scissors" && cChoice==="Rock") {
         console.log("You loose!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
-   else if (pChoice=="Scissors" && cChoice=="Paper") {
+   else if (pChoice==="Scissors" && cChoice==="Paper") {
         console.log("You win!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
+}
 
 console.log(playRound(pChoice, cChoice));
-}
