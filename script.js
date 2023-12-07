@@ -2,6 +2,9 @@ console.log("Hello World")
 
 const myArray = ["Rock", "Paper", "Scissors"];
 
+let pChoice = "Rock";
+let cChoice = getComputerChoice();
+
 function getComputerChoice () {
     let choice = Math.round(Math.random() * 2);
     return myArray[choice];
@@ -36,9 +39,6 @@ function playRound(pChoice, cChoice) {
         console.log("You win!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
-
-let pChoice = "Rock";
-let cChoice = getComputerChoice();
 
 console.log(playRound(pChoice, cChoice));
 }
