@@ -7,12 +7,10 @@ function getComputerChoice () {
     return myArray[choice];
 }
 
-let pChoice = "Rock";
-let cChoice = getComputerChoice();
-
 function playRound(pChoice, cChoice) {
     if (pChoice == cChoice) {
         console.log("Is a tie!");
+        console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
     else if (pChoice=="Rock" && cChoice=="Paper") {
         console.log("You loose!");
@@ -38,4 +36,9 @@ function playRound(pChoice, cChoice) {
         console.log("You win!");
         console.log("You choose ${pChoice} PC choose ${cChoice}");
     }
+
+let pChoice = "Rock";
+let cChoice = getComputerChoice();
+
+console.log(playRound(pChoice, cChoice));
 }
